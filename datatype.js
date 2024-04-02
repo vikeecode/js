@@ -20,5 +20,5 @@
 
     //object
     console.log(typeof age);
-    console.log(typeof null);
-    console.log(typeof undefined);
+    console.log(typeof null);// this line output is object
+    console.log(typeof undefined);//this line output is undefined because this is type in js
