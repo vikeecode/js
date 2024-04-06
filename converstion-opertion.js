@@ -7,8 +7,8 @@ console.log(typeof valueNumber);
 console.log(valueNumber);
 
 //if you given "33"or any number than output is given by 33
-//and if youj given like "33abc" then output is NaN
-//and if you give true in boolean form then output is 1,or false is output is 0\
+//and if you given like "33abc" then output is NaN
+//and if you give true in boolean form then output is 1,or false is output is 0
 //null=>0
 //undefined=>NaN
 
