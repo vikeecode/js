@@ -39,3 +39,37 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 console.log(typeof temp);//this null output is object
+
+//********************************************
+
+//memory
+//there are 2 types of memory
+//1:stack(in stack to use primitive type ) (when you define a stack than when you declare a variable give a copy)
+//   2:heap memory(to use non primitive)(and than heap you have got a real value not copy{refernce})
+//example
+
+//stack
+
+let myYoutubechannel="vikascodecampfree"
+
+let myAnotherName=myYoutubechannel
+myAnotherName="coffceaurwebdev"
+
+console.log(myYoutubechannel);//the output is both is vikascodecampfree and 
+console.log(myAnotherName);// secound is coffceaurwebdev and copy come in stack 
+
+
+//heap example
+
+let oneUser={
+
+    email:"vikas@gmail.com",
+    instId:"vikee@instid",
+
+}
+
+
+userTwo=oneUser
+
+userTwo.email="vishal@gmail.com"//in heap you can change direct not in copy 
+console.log(userTwo);
