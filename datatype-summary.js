@@ -71,5 +71,5 @@ let oneUser={
 
 userTwo=oneUser
 
-userTwo.email="vishal@gmail.com"//in heap you can change direct not in copy 
+userTwo.email="vishal@gmail.com"//in heap you can change direct not in copy  
 console.log(userTwo);
