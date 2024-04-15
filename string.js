@@ -16,8 +16,8 @@
     console.log(gameName.indexOf(`s`));//to check konsa number hai 
 
 
-    const newStrring = gameName.substring(0,4)//in substring if you give a negative value than it react a normal number
-    console.log(newStrring);
+    const newString = gameName.substring(0,4)//in substring if you give a negative value than it react a normal number
+    console.log(newString);
 
     const anotherString = gameName.slice(-8,4) //in slice you can use negfative value
      console.log(anotherString);

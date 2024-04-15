@@ -30,5 +30,5 @@ console.log(Math.floor(Math.random()*10)+1);//here you can remove long number co
 const min=10
 const max=20
 
-console.log(Math.floor(Math.random()*(max-min+1))+min);//here you write min value cae in always
+console.log(Math.floor(Math.random()*(max-min+1))+min);//here you write min value case in always
 
