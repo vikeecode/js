@@ -1,0 +1,40 @@
+//object
+//singleton  //if you write like a literal than not a singleton if you make a constructor than it is singleton
+//object literal
+
+//Object.create    //it is also a method to declare a object  its a type of a declartion is  called a consturctor
+const mySym=Symbol("key1") // how to declare symbole
+const jsUser={
+       name: "vikas",//name is a key and vikas is a value
+       "fullname":"vikas pandey",//this is line thats why you khnow the declartion of 16 number line method
+       age: 19,
+       [mySym]:"mykey1",//this is way to acess a key in object
+       location:"gurgao",
+       email:"vikas@gmail.com",
+       isLogged:false,
+       lastLoginDays:["monday","tuesday"]
+}
+console.log(jsUser.name);//it is not a correct way declare a object 
+console.log(jsUser["name"]); //it is also a way to write a object
+console.log(jsUser["fullname"]);//no any type to write correct way square notation
+console.log(jsUser[mySym]);//you only acess a square operator
+
+//how to change a object value
+
+jsUser.email="vikee@gmail.com"
+//if you lock the object a value than use a fridge
+
+//Object.freeze(jsUser)//if you change a value than not change the value  not before it  if you freeze thevalue than not any value change
+jsUser.email="vishal@gmail.com"
+console.log(jsUser);
+
+jsUser.greeting = function(){
+    console.log("hello js user");
+}
+
+console.log(jsUser.greeting());
+
+jsUser.greetingTwo=function(){
+    console.log(`hello js user, ${this.name}`); // if you acess object  value in funcction 
+}
+console.log(jsUser.greetingTwo());
