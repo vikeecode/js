@@ -7,7 +7,8 @@
 (function chai(){
     //it is called a name IIFE
     console.log(`DB CONNECTED`);
-})();//HERE YOU CAN END THE FUNCTION  other if you write a another function than shown a error
+})();//if you write a two iife thanyou can write semicoln(;)
+//HERE YOU CAN END THE FUNCTION  other if you write a another function than shown a error
 //in arrow function function are also suppport
 //example
 ((name) =>{
