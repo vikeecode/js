@@ -1,4 +1,4 @@
-//arrow function
+//arrow function                                          
 //this is current contest refer by this
 const user={
     username:"vikas",
