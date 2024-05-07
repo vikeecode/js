@@ -18,11 +18,12 @@ for (const key in programming) {
 }
 //in map be do aur not
 
-const map= new Map()
-map.set('IN',"INDIA")
-map.set('USA',"United State of America")
-map.set('Fr',"france")
-//console.log(map);
-for (const key in map) {
-   console.log(key);
-}
+// const map= new Map()
+// map.set('IN',"INDIA")
+// map.set('USA',"United State of America")
+// map.set('Fr',"france")
+// //console.log(map);
+// for (const key in map) {
+//    console.log(key);
+// }
+//map is iteration not do in for in loop
