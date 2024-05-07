@@ -1,0 +1,28 @@
+//for in loop
+//for in loop is use for object and many other thing
+//example for object
+const myObject={
+    js:'javascript',
+    cpp:'c++',
+    rd:'ruby',
+    swift:'swift by apple'
+}
+for (const key in myObject) {
+   //console.log(`${key}shortcut is for ${myObject[key]}`);//this line print for both the things keys and value in object
+
+}
+//lets see is use for array
+const programming=["js","java","python","cpp"]
+for (const key in programming) {
+   // console.log(programming[key]);
+}
+//in map be do aur not
+
+const map= new Map()
+map.set('IN',"INDIA")
+map.set('USA',"United State of America")
+map.set('Fr',"france")
+//console.log(map);
+for (const key in map) {
+   console.log(key);
+}
