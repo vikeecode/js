@@ -28,7 +28,7 @@ const myObject={
     game1:'freefire',
     game2:'BGMI'
 }
-for (const [key,value] of myObject) {
-    console.log(key,':-',value);
-}//in forof loop is not iretable a object thats why be can use a another loop
+// for (const [key,value] of myObject) {
+//     console.log(key,':-',value);
+//}//in forof loop is not iretable a object thats why be can use a another loop
 
