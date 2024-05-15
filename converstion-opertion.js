@@ -62,7 +62,7 @@ num1=num2=num3=2+2
 
 let gameCounter=100
 gameCounter++;
-//++gameCounter // both are same but prefix or postfix to know hoiw it work
+//++gameCounter // both are same but prefix or postfix to know how it work
 console.log(gameCounter);
 
 

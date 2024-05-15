@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">thurshday</div>
+    </div>
+</body>
+<script>
+   const parent = document.querySelector('.parent')
+//    console.log(parent);
+//    console.log(parent.children[1].innerHTML);
+
+   for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML);
+    
+   }
+   parent.children[1].style.color="orange"
+   console.log(parent.firstElementChild);//this line target first child in parent class
+   console.log(parent.lastElementChild);//this is target a last child
+
+  const dayOne = document.querySelector('.day') //if you want a parent class than use this
+  console.log(dayOne);
+  console.log(dayOne.parentElement);//and this line
+  console.log(dayOne.nextElementSibling);
+  //nodes
+  console.log("NODES:",parent.childNodes);
+  //how to create a element
+  const div = document.createElement('div')
+  console.log(div);
+  //set a class and id in div
+  div.className ="main"
+  div.id = Math.round(Math.random()*10+1)
+  //custom method 
+  div.setAttribute("title", "generated title")
+  div.style.backgroundColor = "red"
+  div.style.padding = "12px"
+  //how to attach a to show a page 
+  //div.innerHTML="chai aur code"//this is also a correct but not perfer 
+  const addText = document.createTextNode("chai aur code")
+  div.appendChild(addText)
+  document.body.appendChild(div) //here you add your web page
+  </script>
+</html> 

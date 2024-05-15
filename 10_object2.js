@@ -51,7 +51,7 @@
 //     },
 // ]
 // //this type of  how to write delare
-// user[1].email  //this is way to write
+  // user[1].email  //this is way to write
 
 // console.log(tinderUser);
 

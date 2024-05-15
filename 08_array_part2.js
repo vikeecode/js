@@ -9,7 +9,7 @@ console.log(marvrel_Heros);//here the output come 4index is full dc_heros come s
 
 //if you excess the flas value than you can excess like thaat
 
-//console.log(marvrel_Heros[3][1]);
+console.log(marvrel_Heros[3][1]);
 //spread
 // in spread you can marge thr array
 const all_New_hero=[...marvrel_Heros,...dc_Heros]
