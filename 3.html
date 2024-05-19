@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javscript</li>
+    </ul>
+</body>
+<script>
+    //if you add a li another item than
+    function addLanguage(langName) {
+       const li = document.createElement(`li`);
+       li.innerHTML=`${langName}`
+       document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("paython")
+    addLanguage("typescript")
+    //but this is not a best way because its travese a whole tree 
+    //the best optimise way is add a one node in it
+    function addOptiLanguage(langName) {
+        const li = document.createElement(`li`)
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('goLang')
+
+    //how to value edit
+    const secoundLang = document.querySelector("li:nth-child(2)")
+    //secoundLang.innerHTML="Mojo"//this is not a best
+    const newLi = document.createElement('li')
+    newLi.textContent="Mojo"
+    secoundLang.replaceWith(newLi)
+    //example 2 edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
