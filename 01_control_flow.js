@@ -55,6 +55,6 @@ if (loggedInFromGoogle || loggedInFromEmail) {  //this is || called a OR means o
     console.log("user logged in");
 }
 
-
+  
 
 
