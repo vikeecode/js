@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur js</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+    // setInterval(sayDate,1000,"hii")
+    let interInValid;
+     
+ const xyz = document.getElementById("start").addEventListener("click",()=>{
+    interInValid = setInterval(function(){
+        console.log("vikas");
+    },1000)
+});
+ function stopRuning(){
+ clearInterval(interInValid)
+ console.log("Stoped");
+ interInValid= null;
+ }
+const abc = document.getElementById("stop").addEventListener("click",stopRuning);
+  
+</script>
+</html>
