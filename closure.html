@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    <script>
+        // function init(){
+        //     let name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     displayName();
+        // }
+        // init();
+        // function outer(){
+        //     let username = "vikas"
+        //     function inner(){
+        //         let secret = "my123"
+        //         console.log("inner",username); //you have acces to parent function it is called lexical scoping
+        //     }
+        //     function innerTwo(){
+        //         console.log("TOO inner",username);
+        //         console.log(secret);//here understand that child function doesnot share anything
+        //     }
+        //     inner()
+        //     innerTwo()
+        // }
+        // outer()
+        // console.log("TOO OUTER", username);
+        //closure
+        // function makeFunc(){
+        //     let name = "vikas";
+        //     function displayName(){
+        //         console.log(name);
+        //     }
+        //     return displayName;
+        // }
+        // let myFunc = makeFunc();
+        // myFunc();
+        
+
+    </script>
+    <script>
+        //real life example
+// document.getElementById("orange").onclick = function(){
+//     document.body.style.backgroundColor = `orange`
+// }
+// document.getElementById("green").onclick = function(){
+//     document.body.style.backgroundColor = `green`
+// }
+//and if you have a 500+ button and do same work than we can use a closure
+   function clickHandler(color){
+    // document.body.style.backgroundColor = `${color}`
+    return function(){
+        document.body.style.backgroundColor = `${color}`
+    }
+   }
+   document.getElementById("orange").onclick = clickHandler("orange")//you can use bind 
+document.getElementById("green").onclick = clickHandler("green")
+
+    </script>
+</body>
+</html>
